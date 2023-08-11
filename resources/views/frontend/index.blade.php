@@ -49,8 +49,12 @@
 
                     <div class="header-inner d-flex align-items-center">
                         <div class="logo-outer d-flex align-items-center">
-                            <div class="logo"><a href="index.html"><img src="assets/images/logos/logo.png" alt="Logo"
-                                        title="Logo"></a></div>
+                            <div class="logo">
+                                <a href="index.html">
+                                    <!-- <img src="assets/images/logos/logo.png" alt="Logo" title="Logo"> -->
+                                    <span class="h1 text-black"> Marxon </span>
+                                </a>
+                            </div>
                             <div class="header-contact">
                                 <i class="flaticon-call"></i>
                                 <div class="content">
@@ -74,20 +78,33 @@
                                 </div>
 
                                 <div class="navbar-collapse collapse clearfix">
-                                    <ul class="navigation onepage clearfix">
-                                        <li><a href="index-onepage.html#home">Home</a></li>
-                                        <li><a href="index-onepage.html#services">services</a></li>
-                                        <li><a href="index-onepage.html#about">about</a></li>
-                                        <li class="dropdown"><a href="index-onepage.html#">sections</a>
+                                    <ul class="navigation clearfix">
+                                        <li class="dropdown"><a href="index.html#">Home</a>
                                             <ul>
-                                                <li><a href="index-onepage.html#feature">features</a></li>
-                                                <li><a href="index-onepage.html#solution">solution</a></li>
-                                                <li><a href="index-onepage.html#portfolio">portfolio</a></li>
-                                                <li><a href="index-onepage.html#pricing">pricing</a></li>
-                                                <li><a href="index-onepage.html#testimonial">testimonial</a></li>
+                                                <li><a href="index.html">MultiPage</a></li>
+                                                <li><a href="index-onepage.html">OnePage</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="index-onepage.html#team">team</a></li>
+                                        <li class="dropdown"><a href="index.html#">pages</a>
+                                            <ul>
+                                                <li><a href="about.html">About us</a></li>
+                                                <li><a href="services.html">Our services</a></li>
+                                                <li><a href="team.html">team members</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="index.html#">portfolio</a>
+                                            <ul>
+                                                <li><a href="portfolio.html">Portfolio</a></li>
+                                                <li><a href="portfolio-details.html">Portfolio details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="index.html#">blog</a>
+                                            <ul>
+                                                <li><a href="blog.html">blog standard</a></li>
+                                                <li><a href="blog-details.html">blog details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
                                     </ul>
                                 </div>
 
@@ -100,7 +117,7 @@
                             <!-- Nav Search -->
                             <div class="nav-search py-15">
                                 <button class="fa fa-search"></button>
-                                <form action="index-onepage.html#" class="hide">
+                                <form action="index.html#" class="hide">
                                     <input type="text" placeholder="Search" class="searchbox" required="">
                                     <button type="submit" class="searchbutton fa fa-search"></button>
                                 </form>
@@ -118,11 +135,11 @@
         </header>
 
         <!-- Hero Section Start -->
-        <section class="hero-section rel z-1 bg-lighter" id="home">
+        <section class="hero-section rel z-1 bg-lighter">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 align-self-center">
-                        <div class="hero-content my-220 rmy-100">
+                        <div class="hero-content mt-220 mb-225 rmt-95 rmb-100">
                             <span class="sub-title mb-15 wow fadeInUp delay-0-2s">We’re provide the best services</span>
                             <h1 class="mb-30 wow fadeInUp delay-0-4s">Design <span>solutions</span> for any media.</h1>
                             <p class="wow fadeInUp delay-0-6s">pretium convallis lacinia. Quisque ac eros urna. Mauris
@@ -148,7 +165,7 @@
 
 
         <!-- Services Section Start -->
-        <section class="services-section pt-135 rpt-95" id="services">
+        <section class="services-section pt-135 rpt-95">
             <div class="container">
                 <div class="row justify-content-between pb-40 rpb-65">
                     <div class="col-lg-6">
@@ -217,7 +234,7 @@
 
 
         <!-- About Section Start -->
-        <section class="about-section rel z-1 pt-135 rpt-95 pb-140 rpb-100" id="about">
+        <section class="about-section rel z-1 pt-135 rpt-95 pb-140 rpb-100">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -250,7 +267,7 @@
 
 
         <!-- Features Section Start -->
-        <section class="features-section rel z-1 bg-lighter" id="feature">
+        <section class="features-section rel z-1 bg-lighter">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 align-self-center">
@@ -290,7 +307,7 @@
 
 
         <!-- Solution Section Start -->
-        <section class="solution-section rel z-1 pt-140 rpt-100" id="solution">
+        <section class="solution-section rel z-1 pt-140 rpt-100">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -322,7 +339,7 @@
                                     <span class="skill-bar-percent"></span>
                                 </div>
                                 <div class="skillbar" data-percent="90">
-                                    <h6 class="skillbar-title">Business Consulthing</h6>
+                                    <h6 class="skillbar-title">Business Consultation</h6>
                                     <div class="skillbar-wrap">
                                         <span class="skillbar-bar"></span>
                                     </div>
@@ -338,7 +355,7 @@
 
 
         <!-- Portfolio Section Start -->
-        <section class="portfolio-section bg-white rel z-1 pt-135 rpt-95 pb-110 rpb-70" id="portfolio">
+        <section class="portfolio-section bg-white rel z-1 pt-135 rpt-95 pb-110 rpb-70">
             <div class="container">
                 <div class="row justify-content-between align-items-center pb-45">
                     <div class="col-xl-7 col-lg-8">
@@ -361,7 +378,7 @@
                     <a class="portfolio-hover" href="portfolio-details.html">
                         <div class="content">
                             <span class="category">Design Team</span>
-                            <h4>Web design Consulthing</h4>
+                            <h4>Web design Consultation</h4>
                         </div>
                         <i class="fas fa-long-arrow-alt-right"></i>
                     </a>
@@ -371,7 +388,7 @@
                     <a class="portfolio-hover" href="portfolio-details.html">
                         <div class="content">
                             <span class="category">Design Team</span>
-                            <h4>Web design Consulthing</h4>
+                            <h4>Web design Consultation</h4>
                         </div>
                         <i class="fas fa-long-arrow-alt-right"></i>
                     </a>
@@ -381,7 +398,7 @@
                     <a class="portfolio-hover" href="portfolio-details.html">
                         <div class="content">
                             <span class="category">Design Team</span>
-                            <h4>Web design Consulthing</h4>
+                            <h4>Web design Consultation</h4>
                         </div>
                         <i class="fas fa-long-arrow-alt-right"></i>
                     </a>
@@ -391,7 +408,7 @@
                     <a class="portfolio-hover" href="portfolio-details.html">
                         <div class="content">
                             <span class="category">Design Team</span>
-                            <h4>Web design Consulthing</h4>
+                            <h4>Web design Consultation</h4>
                         </div>
                         <i class="fas fa-long-arrow-alt-right"></i>
                     </a>
@@ -401,7 +418,7 @@
                     <a class="portfolio-hover" href="portfolio-details.html">
                         <div class="content">
                             <span class="category">Design Team</span>
-                            <h4>Web design Consulthing</h4>
+                            <h4>Web design Consultation</h4>
                         </div>
                         <i class="fas fa-long-arrow-alt-right"></i>
                     </a>
@@ -411,7 +428,7 @@
                     <a class="portfolio-hover" href="portfolio-details.html">
                         <div class="content">
                             <span class="category">Design Team</span>
-                            <h4>Web design Consulthing</h4>
+                            <h4>Web design Consultation</h4>
                         </div>
                         <i class="fas fa-long-arrow-alt-right"></i>
                     </a>
@@ -421,7 +438,7 @@
                     <a class="portfolio-hover" href="portfolio-details.html">
                         <div class="content">
                             <span class="category">Design Team</span>
-                            <h4>Web design Consulthing</h4>
+                            <h4>Web design Consultation</h4>
                         </div>
                         <i class="fas fa-long-arrow-alt-right"></i>
                     </a>
@@ -431,7 +448,7 @@
                     <a class="portfolio-hover" href="portfolio-details.html">
                         <div class="content">
                             <span class="category">Design Team</span>
-                            <h4>Web design Consulthing</h4>
+                            <h4>Web design Consultation</h4>
                         </div>
                         <i class="fas fa-long-arrow-alt-right"></i>
                     </a>
@@ -441,7 +458,7 @@
                     <a class="portfolio-hover" href="portfolio-details.html">
                         <div class="content">
                             <span class="category">Design Team</span>
-                            <h4>Web design Consulthing</h4>
+                            <h4>Web design Consultation</h4>
                         </div>
                         <i class="fas fa-long-arrow-alt-right"></i>
                     </a>
@@ -451,7 +468,7 @@
                     <a class="portfolio-hover" href="portfolio-details.html">
                         <div class="content">
                             <span class="category">Design Team</span>
-                            <h4>Web design Consulthing</h4>
+                            <h4>Web design Consultation</h4>
                         </div>
                         <i class="fas fa-long-arrow-alt-right"></i>
                     </a>
@@ -462,7 +479,7 @@
 
 
         <!-- Pricing Section Start -->
-        <section class="pricing-section pt-135 rpt-95 mb-180 rel z-0 bg-lighter" id="pricing">
+        <section class="pricing-section pt-135 rpt-95 mb-180 rel z-0 bg-lighter">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-7">
@@ -530,7 +547,7 @@
 
 
         <!-- Team Section Start -->
-        <section class="team-section pt-135 rpt-95 rel z-1" id="team">
+        <section class="team-section pt-135 rpt-95 rel z-1">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-7">
@@ -618,7 +635,7 @@
 
 
         <!-- Testimonial Section Start -->
-        <section class="testimonial-section pt-95 rpt-55 pb-125 rpb-85" id="testimonial">
+        <section class="testimonial-section pt-95 rpt-55 pb-125 rpb-85">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
@@ -708,7 +725,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="subscribe-form mt-10 wow fadeInRight delay-0-2s">
-                                <form action="index-onepage.html#">
+                                <form action="index.html#">
                                     <input type="email" placeholder="Email Address" required>
                                     <button type="submit">Subscribe Now</button>
                                 </form>
@@ -722,15 +739,16 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="footer-widget about-widget">
                             <div class="footer-logo mb-30">
-                                <a href="index.html"><img src="assets/images/logos/logo-white.png" alt="Logo"></a>
+                                <a href="index.html"><img src="assets/images/logos/logo-white.png"
+                                        alt="Logo"></a>
                             </div>
                             <p>129 Lily Cl, London W14 9YB, United Kingdom</p>
                             <div class="footer-contact mt-30">
                                 <i class="flaticon-mail"></i>
                                 <a
-                                    href="https://demo.webtend.net/cdn-cgi/l/email-protection#1a73747c755a6e7f76797534797577"><span
+                                    href="https://demo.webtend.net/cdn-cgi/l/email-protection#9bf2f5fdf4dbeffef7f8f4b5f8f4f6"><span
                                         class="__cf_email__"
-                                        data-cfemail="167f7870795662737a75793875797b">[email&#160;protected]</span></a>
+                                        data-cfemail="147d7a727b54607178777b3a777b79">[email&#160;protected]</span></a>
                             </div>
                         </div>
                     </div>

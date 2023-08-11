@@ -1,0 +1,26 @@
+/* utility classes */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.lowercase {
+    text-transform: none;
+}
+.lowercase-imp {
+    text-transform: lowercase !important;
+}
+
+.underline, a.underline{
+    text-decoration: underline;
+}
+
+.product-wrap{
+    margin: 2em 0;
+}
+
+

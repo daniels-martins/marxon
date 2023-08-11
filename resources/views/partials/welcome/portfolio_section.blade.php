@@ -21,8 +21,8 @@
             <img src="assets/images/portfolios/portfolio1.jpg" alt="Portfolio">
             <a class="portfolio-hover" href="{{ route('portfolio.show', 1) }}">
                 <div class="content">
-                    <span class="category">Design Team</span>
-                    <h4>Web design Consultation</h4>
+                     <span class="category">Development Team</span>
+                    <h4>Cargo and Logistics Solution</h4>
                 </div>
                 <i class="fas fa-long-arrow-alt-right"></i>
             </a>
@@ -31,8 +31,8 @@
             <img src="assets/images/portfolios/portfolio2.jpg" alt="Portfolio">
             <a class="portfolio-hover" href="{{ route('portfolio.show', 1) }}">
                 <div class="content">
-                    <span class="category">Design Team</span>
-                    <h4>Web design Consultation</h4>
+                     <span class="category">Development Team</span>
+                    <h4>Crypto Investment Solution</h4>
                 </div>
                 <i class="fas fa-long-arrow-alt-right"></i>
             </a>
@@ -41,8 +41,8 @@
             <img src="assets/images/portfolios/portfolio3.jpg" alt="Portfolio">
             <a class="portfolio-hover" href="{{ route('portfolio.show', 1) }}">
                 <div class="content">
-                    <span class="category">Design Team</span>
-                    <h4>Web design Consultation</h4>
+                     <span class="category">Development Team</span>
+                    <h4>Online Banking Solution</h4>
                 </div>
                 <i class="fas fa-long-arrow-alt-right"></i>
             </a>
@@ -51,8 +51,8 @@
             <img src="assets/images/portfolios/portfolio4.jpg" alt="Portfolio">
             <a class="portfolio-hover" href="{{ route('portfolio.show', 1) }}">
                 <div class="content">
-                    <span class="category">Design Team</span>
-                    <h4>Web design Consultation</h4>
+                    <span class="category">Development Team</span>
+                    <h4>single vendor eCommerce Solution</h4>
                 </div>
                 <i class="fas fa-long-arrow-alt-right"></i>
             </a>
@@ -61,8 +61,8 @@
             <img src="assets/images/portfolios/portfolio5.jpg" alt="Portfolio">
             <a class="portfolio-hover" href="{{ route('portfolio.show', 1) }}">
                 <div class="content">
-                    <span class="category">Design Team</span>
-                    <h4>Web design Consultation</h4>
+                   <span class="category">Development Team</span>
+                    <h4>Personal Blog</h4>
                 </div>
                 <i class="fas fa-long-arrow-alt-right"></i>
             </a>
@@ -71,8 +71,8 @@
             <img src="assets/images/portfolios/portfolio1.jpg" alt="Portfolio">
             <a class="portfolio-hover" href="{{ route('portfolio.show', 1) }}">
                 <div class="content">
-                    <span class="category">Design Team</span>
-                    <h4>Web design Consultation</h4>
+                    <span class="category">Development Team</span>
+                    <h4>Portfolio Website</h4>
                 </div>
                 <i class="fas fa-long-arrow-alt-right"></i>
             </a>
@@ -81,8 +81,8 @@
             <img src="assets/images/portfolios/portfolio2.jpg" alt="Portfolio">
             <a class="portfolio-hover" href="{{ route('portfolio.show', 1) }}">
                 <div class="content">
-                    <span class="category">Design Team</span>
-                    <h4>Web design Consultation</h4>
+                     <span class="category">Development Team</span>
+                    <h4>Non Profit Website (NGO or Charity)</h4>
                 </div>
                 <i class="fas fa-long-arrow-alt-right"></i>
             </a>

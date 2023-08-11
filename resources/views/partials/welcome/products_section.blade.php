@@ -11,8 +11,22 @@
             <div class="col-lg-4">
                 <div class="">
                     <div class="service-title-content wow fadeInRight delay-0-2s">
-                        <p>in a hurry? Cut down development time and Order any of our packaged products and get it delivered to you within 100 hours.</p>
-                        <p> That's literally in four days!</p>
+                        <p>in a hurry? Cut down development time</p>
+                        <p>
+                            <span class="bg-primary text-white rounded-circle py-1 px-2">1</span>
+                            <span> Order any of our packaged products</span>
+                        </p>
+                        <p>
+                            <span class="bg-primary text-white rounded-circle py-1 px-2 my-2">2</span>
+                            <span>get it customized for your specific use </span>
+                        </p>
+                        <p>
+                            <span class="bg-primary text-white rounded-circle py-1 px-2">3</span>
+                            <span>Product delivered to you within <strong>72 hrs</strong>.</span>
+                        </p>
+                        <p>
+                            <span class="bg-primary text-white rounded-circle py-1 px-2"><i class="fa fa-check"></i></span>
+                           That's literally in Three days!</p>
                         <a href="{{ route('products') }}" class="view-more mt-25">View All Packaged Products <i
                                 class="fas fa-long-arrow-alt-right"></i></a>
                     </div>

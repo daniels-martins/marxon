@@ -15,7 +15,7 @@
                             <button type="submit">Subscribe Now</button>
                         </form>
                         <span>Trusted By 50+ Clients</span>
-                        <img src="assets/images/shapes/hand.png" alt="hand" class="hand">
+                        <img src="/assets/images/shapes/hand.png" alt="hand" class="hand">
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@
             <div class="col-xl-2 col-lg-3 col-sm-6">
                 <div class="footer-widget about-widget">
                     <div class="footer-logo mb-30">
-                        <a href="index.html"><img src="assets/images/logos/logo-white.png" alt="Logo"></a>
+                        <a href="index.html"><img src="/assets/images/logos/logo-white.png" alt="Logo"></a>
                     </div>
                     {{-- <p>129 Lily Cl, London W14 9YB, United Kingdom</p> --}}
                     <p>22, Olajide Street, off Itire Road, Lagos</p>
@@ -97,8 +97,8 @@
             </ul>
         </div>
     </div>
-    <img class="triangle-shape" src="assets/images/shapes/triangle.png" alt="Shape">
-    <img class="half-circle-shape" src="assets/images/shapes/half-circle.png" alt="Shape">
+    <img class="triangle-shape" src="/assets/images/shapes/triangle.png" alt="Shape">
+    <img class="half-circle-shape" src="/assets/images/shapes/half-circle.png" alt="Shape">
 </footer>
 <!-- Footer Area End -->
 

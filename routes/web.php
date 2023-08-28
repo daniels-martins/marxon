@@ -2,6 +2,7 @@
 
 use App\Models\Service;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TinkerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -78,3 +79,8 @@ Route::get('/products/{id}/show', function () {
 Route::get('/pricing', function () {
     return view('frontend.pricing');
 })->name('pricing');
+
+
+
+// dev routes
+Route::get('/tinker',[TinkerController::class, 'index'])->name('pricing');

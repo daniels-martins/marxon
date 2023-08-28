@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('services', function (Blueprint $table) {
             $table->id();
             $table->string('title', 100);
+            $table->string('icon', 100);
             $table->string('brief'); // brief should be concise and lead to a related blog post
             // $table->text('synopsis');//should link to the blog post for that service
             $table->timestamps();

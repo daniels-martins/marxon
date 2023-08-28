@@ -13,64 +13,19 @@
             </div>
             <div class="services-wrap bg-lighter br-10">
                 <div class="row no-gap">
-                    <div class="col-xl-3 col-md-6">
-                        <div class="service-item wow fadeInUp delay-0-2s">
-                            <div class="icon">
-                                <img src="assets/images/services/icon1.png" alt="Icon">
+                    @foreach ($services as $service)
+                        <div class="col-xl-3 col-md-6">
+                            <div class="service-item wow fadeInUp delay-0-8s">
+                                <div class="icon">
+                                    <img src="/{{ $service->icon }}" alt="Icon">
+                                </div>
+                                <h4>{{ $service->title }}</h4>
+                                <a href="services.html" class="read-more">Explore <i
+                                        class="fas fa-long-arrow-alt-right"></i></a>
                             </div>
-                            <h4>Brand Identity Design</h4>
-                            <h4 class="read-more text-sm">
-                                <small class="fw-light lowercase"> Engineering
+                        </div>
+                    @endforeach
 
-                                    We offer end to end engineering works, with efficiency, and user friendly developements
-                                    Included with...
-                                    <ul>
-                                        <li>
-                                            <i class="fa fa-check"></i> Web Development
-
-                                        </li>
-                                        <li></li>
-                                        <li></li>
-                                    </ul>
-                                    Mobile Apps Development
-                                    Desktop App Development
-                                </small>
-                            </h4>
-                            {{-- <a href="services.html" class="read-more">Explore <i
-                                    class="fas fa-long-arrow-alt-right"></i></a> --}}
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="service-item wow fadeInUp delay-0-4s">
-                            <div class="icon">
-                                <img src="assets/images/services/icon2.png" alt="Icon">
-                            </div>
-                            <h4>Product listing ads management</h4>
-
-                            <a href="services.html" class="read-more">Explore <i
-                                    class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="service-item wow fadeInUp delay-0-6s">
-                            <div class="icon">
-                                <img src="assets/images/services/icon3.png" alt="Icon">
-                            </div>
-                            <h4>Multi-channel Optimization</h4>
-                            <a href="services.html" class="read-more">Explore <i
-                                    class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="service-item wow fadeInUp delay-0-8s">
-                            <div class="icon">
-                                <img src="assets/images/services/icon4.png" alt="Icon">
-                            </div>
-                            <h4>Web & app Demelopment</h4>
-                            <a href="services.html" class="read-more">Explore <i
-                                    class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -88,9 +43,11 @@
                             <span class="sub-title mb-15">Creative solution</span>
                             <h2>Creative <span>solutions to</span> digital challenges</h2>
                         </div>
-                        <p>Integer eu odio dui. Mauris et felis vehicula, fermentum massa in, egestas leo. Fusce
-                            magna eros,</p>
-                        <p>ullamcorper nec purus ut, sagittis placerat felis.</p>
+                        <p style="text-transform: none;">
+                            We optimize your digital strategies, creating responsive designs and engaging mobile experiences
+                            that captivate your audience. Trust Marxon Inc. to deliver the creative solutions you need to
+                            thrive in the digital age.
+                        </p>
                         <ul class="list-style-one mt-30">
                             <li>Modern & Unique Design</li>
                             <li>design usability</li>

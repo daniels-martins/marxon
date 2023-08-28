@@ -47,7 +47,7 @@
                      </div>
                  </div> --}}
 
-                 <div class="col-xl-4 col-md-6">
+                 {{-- <div class="col-xl-4 col-md-6">
                      <div class="service-item wow fadeInUp delay-0-2s">
                          <div class="icon">
                              <img src="assets/images/services/icon1.png" alt="Icon">
@@ -77,7 +77,20 @@
                          <a href="{{ route('services') }}" class="read-more">Explore <i
                                  class="fas fa-long-arrow-alt-right"></i></a>
                      </div>
-                 </div>
+                 </div> --}}
+                 @foreach ($services as $service)
+                     <div class="col-xl-4 col-md-6">
+                         <div class="service-item wow fadeInUp delay-0-8s">
+                             <div class="icon">
+                                 <img src="/{{ $service->icon }}" alt="Icon">
+                             </div>
+                             <h4>{{ $service->title }} </h4>
+                             <a href="{{ route('services') }}" class="read-more">Explore <i
+                                     class="fas fa-long-arrow-alt-right"></i></a>
+                         </div>
+                     </div>
+                 @endforeach
+
              </div>
          </div>
      </div>

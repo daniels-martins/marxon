@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Service;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,7 +31,8 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('frontend.index_spa');
+   $services = Service::all();
+    return view('frontend.index_spa', compact('services'));
 })->name('welcome');
 
 
@@ -60,7 +62,8 @@ Route::get('/about', function () {
 
 
 Route::get('/services', function () {
-    return view('frontend.services');
+   $services  = Service::all();
+    return view('frontend.services', compact('services'));
 })->name('services');
 
 Route::get('/products', function () {

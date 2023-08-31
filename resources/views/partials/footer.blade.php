@@ -90,10 +90,10 @@
         <div class="copyright-area">
             <p>©2016 - {{ date('Y') }}. <a href="/" class="text-success">Marxon &trade;</a> All rights
                 reserved.</p>
-            <ul class="footer-menu py-5">
-                <li><a href="#">support</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">policy</a></li>
+            <ul class="footer-menu py-5 px-5">
+                <li><a href="{{ route('contact') }}">support</a></li>
+                <li><a href="{{ route('contact') }}">Privacy</a></li>
+                <li><a href="{{ route('contact') }}">policy</a></li>
             </ul>
         </div>
     </div>

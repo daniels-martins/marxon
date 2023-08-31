@@ -13,6 +13,7 @@ class BlogPost extends Model
         'img',
         'alt',
         'title',
+        'tags',
         'slug',
         'pg1',
         'pg2',

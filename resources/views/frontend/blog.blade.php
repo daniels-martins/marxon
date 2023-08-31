@@ -10,16 +10,16 @@
                         @foreach ($blogPosts as $post)
                             <div class="blog-item wow fadeInUp delay-0-2s">
                                 <div class="image">
-                                    <img src="/assets/images/blog/blog1.jpg" alt="Blog">
+                                    <img src="/{{ $post->img}}" alt="{{ $post->alt}}">
                                 </div>
                                 <div class="blog-content">
                                     <ul class="blog-meta">
                                         <li><i class="far fa-calendar-alt"></i> <a
-                                                href="#">{{ $post->created_at }}</a>
+                                                href="javascript:void(0)">{{ $post->created_at }}</a>
                                         </li>
 
-                                        <li><i class="far fa-user"></i> <a href="#">by - Admin</a></li>
-                                        <li><i class="far fa-comment-dots"></i> <a href="#">5 Comments</a></li>
+                                        <li><i class="far fa-user"></i> <a href="javascript:void(0)">by - Admin</a></li>
+                                        <li><i class="far fa-comment-dots"></i> <a href="javascript:void(0)">5 Comments</a></li>
                                     </ul>
                                     <h3><a href="{{ route('blog.show', $post->slug) }}">{{ $post->title }} </a></h3>
                                     <p>{{ substr($post->pg1, 50) . '...' }} </p>
@@ -27,10 +27,10 @@
                                         <a href="{{ route('blog.show', $post->slug) }}" class="theme-btn">Read More</a>
                                         <div class="share-icons">
                                             <b>Share :</b>
-                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-google-plus-g"></i></a>
                                         </div>
                                     </div>
                                 </div>

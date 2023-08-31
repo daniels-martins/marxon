@@ -13,10 +13,10 @@
                             </div>
                             <div class="blog-content wow fadeInUp delay-0-2s">
                                 <ul class="blog-meta">
-                                    <li><i class="far fa-calendar-alt"></i> <a href="blog-details.html#">18 March,
+                                    <li><i class="far fa-calendar-alt"></i> <a href="javascript:void(0)">18 March,
                                             2022, {{ $post->created_at }}</a></li>
-                                    <li><i class="far fa-user"></i> <a href="blog-details.html#">by - Admin</a></li>
-                                    <li><i class="far fa-comment-dots"></i> <a href="blog-details.html#">x
+                                    <li><i class="far fa-user"></i> <a href="javascript:void(0)">by - Admin</a></li>
+                                    <li><i class="far fa-comment-dots"></i> <a href="javascript:void(0)">x
                                             Comments</a></li>
                                 </ul>
                                 <h3>{{ $post->title }}</h3>
@@ -34,6 +34,9 @@
                                     <p>{{ $post->pg3 }} </p>
                                 @endif
 
+                                @if ($post->pg4)
+                                    <p>{{ $post->pg4 }} </p>
+                                @endif
 
                                 @if ($post->quote2)
                                     <blockquote>
@@ -42,7 +45,6 @@
                                     </blockquote>
                                 @endif
 
-                                <p>{{ $post->pg4 }} </p>
 
                                 @if ($post->pg5)
                                     <p>{{ $post->pg5 }} </p>
@@ -62,15 +64,15 @@
                                 <div class="btn-share">
                                     <div class="tag-cloud">
                                         <b><b>Releted Tags :</b></b>
-                                        <a href="blog.html">Agency</a>
-                                        <a href="blog.html">Designing</a>
+                                        <a href="javascript:void(0)">Agency</a>
+                                        <a href="javascript:void(0)">Designing</a>
                                     </div>
                                     <div class="share-icons mb-20">
                                         <b>Share :</b>
-                                        <a href="blog-details.html#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="blog-details.html#"><i class="fab fa-twitter"></i></a>
-                                        <a href="blog-details.html#"><i class="fab fa-linkedin-in"></i></a>
-                                        <a href="blog-details.html#"><i class="fab fa-google-plus-g"></i></a>
+                                        <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                                        <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="javascript:void(0)"><i class="fab fa-google-plus-g"></i></a>
                                     </div>
                                 </div>
                                 <div class="comment-item admin-comment mt-50 wow fadeInUp delay-0-2s">
@@ -84,14 +86,17 @@
                                         <p>Phasellus nulla diam, pretium sit amet ex vel, feugiat fermentum massa.
                                             Vestibulum blandit</p>
                                         <div class="social-style-two pt-5">
-                                            <a href="blog-details.html#"><i class="fab fa-facebook-f"></i></a>
-                                            <a href="blog-details.html#"><i class="fab fa-twitter"></i></a>
-                                            <a href="blog-details.html#"><i class="fab fa-linkedin-in"></i></a>
-                                            <a href="blog-details.html#"><i class="fab fa-google-plus-g"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-google-plus-g"></i></a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="comments pt-20 mb-60 wow fadeInUp delay-0-2s">
+
+
+                                {{--  comments section :futures --}}
+                                {{-- <div class="comments pt-20 mb-60 wow fadeInUp delay-0-2s">
                                     <h4 class="comment-title mb-30">3 Comments</h4>
                                     <div class="comment-item">
                                         <div class="author-image">
@@ -104,7 +109,7 @@
                                             </div>
                                             <p>Phasellus nulla diam, pretium sit amet ex vel, feugiat fermentum
                                                 massa. Vestibulum blandit faucibus arcu,</p>
-                                            <form action="blog-details.html#">
+                                            <form action="javascript:void(0)">
                                                 <input type="text" required placeholder="Typing ....">
                                                 <button type="submit"><i class="fas fa-paper-plane"></i></button>
                                             </form>
@@ -121,7 +126,7 @@
                                             </div>
                                             <p>Phasellus nulla diam, pretium sit amet ex vel, feugiat fermentum
                                                 massa.</p>
-                                            <form action="blog-details.html#">
+                                            <form action="javascript:void(0)">
                                                 <input type="text" required placeholder="Typing ....">
                                                 <button type="submit"><i class="fas fa-paper-plane"></i></button>
                                             </form>
@@ -138,14 +143,16 @@
                                             </div>
                                             <p>Phasellus nulla diam, pretium sit amet ex vel, feugiat fermentum
                                                 massa. Vestibulum blandit faucibus arcu,</p>
-                                            <form action="blog-details.html#">
+                                            <form action="javascript:void(0)">
                                                 <input type="text" required placeholder="Typing ....">
                                                 <button type="submit"><i class="fas fa-paper-plane"></i></button>
                                             </form>
                                         </div>
                                     </div>
-                                </div>
-                                <form id="comment-page" class="comment-form wow fadeInUp delay-0-2s">
+                                </div> --}}
+
+                                {{-- FORM TO ADD A COMMENT --}}
+                                {{-- <form id="comment-page" class="comment-form wow fadeInUp delay-0-2s">
                                     <h4 class="comment-title mb-30">Add Comment</h4>
                                     <div class="row clearfix">
                                         <div class="col-sm-6">
@@ -171,7 +178,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </form>
+                                </form> --}}
                             </div>
                         </div>
                     </div>
@@ -179,7 +186,7 @@
                 <div class="col-lg-4">
                     <div class="blog-sidebar">
                         {{-- <div class="widget search-widget wow fadeInUp delay-0-2s">
-                            <form action="blog-details.html#">
+                            <form action="javascript:void(0)">
                                 <input type="search" placeholder="Search....." required>
                                 <button type="submit"><i class="fas fa-search"></i></button>
                             </form>
@@ -187,11 +194,11 @@
                         {{-- <div class="widget category-widget wow fadeInUp delay-0-4s">
                             <h4 class="widget-title">Category</h4>
                             <ul>
-                                <li><a href="blog.html">Web Development</a> <span>05</span></li>
-                                <li><a href="blog.html">UI-UX Designing</a> <span>07</span></li>
-                                <li><a href="blog.html">Cyber Security</a> <span>03</span></li>
-                                <li><a href="blog.html">Software development</a> <span>09</span></li>
-                                <li><a href="blog.html">Digital Marketing</a> <span>05</span></li>
+                                <li><a href="javascript:void(0)">Web Development</a> <span>05</span></li>
+                                <li><a href="javascript:void(0)">UI-UX Designing</a> <span>07</span></li>
+                                <li><a href="javascript:void(0)">Cyber Security</a> <span>03</span></li>
+                                <li><a href="javascript:void(0)">Software development</a> <span>09</span></li>
+                                <li><a href="javascript:void(0)">Digital Marketing</a> <span>05</span></li>
                             </ul>
                         </div> --}}
                         <div class="widget blog-widget wow fadeInUp delay-0-2s">
@@ -205,7 +212,7 @@
                                         <div class="blog-widget-content">
                                             <ul class="blog-meta">
                                                 <li><i class="far fa-calendar-alt"></i> <a
-                                                        href="blog-details.html#">{{ $post->created_at }}</a></li>
+                                                        href="javascript:void(0)">{{ $post->created_at }}</a></li>
                                             </ul>
                                             <h5><a href="blog-details.html">{{ $post->title }}</a></h5>
                                         </div>
@@ -217,7 +224,7 @@
                                     </div>
                                     <div class="blog-widget-content">
                                         <ul class="blog-meta">
-                                            <li><i class="far fa-calendar-alt"></i> <a href="blog-details.html#">18
+                                            <li><i class="far fa-calendar-alt"></i> <a href="javascript:void(0)">18
                                                     March, 2022</a></li>
                                         </ul>
                                         <h5><a href="blog-details.html">Providing brilliant ideas for your
@@ -230,7 +237,7 @@
                                     </div>
                                     <div class="blog-widget-content">
                                         <ul class="blog-meta">
-                                            <li><i class="far fa-calendar-alt"></i> <a href="blog-details.html#">18
+                                            <li><i class="far fa-calendar-alt"></i> <a href="javascript:void(0)">18
                                                     March, 2022</a></li>
                                         </ul>
                                         <h5><a href="blog-details.html">Providing brilliant ideas for your
@@ -238,20 +245,20 @@
                                     </div>
                                 </div>
                                 <div class="more-btn w-100 pt-10 text-center">
-                                    <a href="blog.html" class="view-more">View More</a>
+                                    <a href="javascript:void(0)" class="view-more">View More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="widget tag-widget wow fadeInUp delay-0-2s">
                             <h4 class="widget-title">Tags</h4>
                             <div class="tag-cloud">
-                                <a href="blog.html">Agency</a>
-                                <a href="blog.html">Designing</a>
-                                <a href="blog.html">apps</a>
-                                <a href="blog.html">Development</a>
-                                <a href="blog.html">Graphics</a>
-                                <a href="blog.html">Cyber Security</a>
-                                <a href="blog.html">Cloud</a>
+                                <a href="javascript:void(0)">Agency</a>
+                                <a href="javascript:void(0)">Designing</a>
+                                <a href="javascript:void(0)">apps</a>
+                                <a href="javascript:void(0)">Development</a>
+                                <a href="javascript:void(0)">Graphics</a>
+                                <a href="javascript:void(0)">Cyber Security</a>
+                                <a href="javascript:void(0)">Cloud</a>
                             </div>
                         </div>
                         <div class="widget gallery-widget wow fadeInUp delay-0-2s">

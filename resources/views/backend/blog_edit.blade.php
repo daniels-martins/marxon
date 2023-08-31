@@ -49,17 +49,19 @@
                             <div class="form-group">
                                 <label for="tags"> Tags</label>
                                 <input type="text" class="form-control" id="tags" name="tags"
-                                    placeholder="tags">
+                                    placeholder="tags" value="{{ $blogPost->tags}}">
                             </div>
-                            
+
                             {{-- post image --}}
                             <div class="form-group">
                                 <label for="img"> Post Image </label> <br>
-                                <img src="/{{ $blogPost->img }}" alt="post image" width="300">
+                                <img src="/{{ $blogPost->img }}" alt="{{ $blogPost->alt }}" width="300">
+                                   <br><br><label for="img">Change Image</label>
                                 <input type="file" name="img" id="img"> <br><br>
-                                <input type="text" name="alt" id="alt" placeholder="Alt text for image">                            </div>
+                                <label for="alt">Alt </label>
+                                <input type="text" name="alt" id="alt" value="{{ $blogPost->alt }}" placeholder="Alt text for image">                            </div>
                             <div class="form-group">
-                                <h3 class="mt-5">Blog Content</h3>
+                                <h3 class="mt-5">Post Content</h3>
                                 <br>
                                 <p>
                                     <label for="pg1">Paragraph1</label> <br>

@@ -72,7 +72,7 @@ class BlogPostController extends Controller
     public function edit(BlogPost $blogPost)
     {
         // dd($blogPost);
-        return view('backend.blog_update', compact('blogPost'));
+        return view('backend.blog_edit', compact('blogPost'));
 
     }
 
@@ -85,7 +85,7 @@ class BlogPostController extends Controller
         // minimal validation
         $validated = $request->validate([
             'img' => 'nullable',
-            'alt' => 'required_if:img',
+            'alt' => 'required_if:img,true',
             'tags' => 'nullable',
             'title' => 'required',
             'slug' => 'required',

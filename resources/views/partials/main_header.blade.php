@@ -81,7 +81,7 @@
 
                      <!-- menu Btn -->
                      <div class="menu-btn">
-                         <a href="contact.html" class="theme-btn br-5">Get a Quote</a>
+                        <a href="{{ route('contact') }}" class="theme-btn br-5">Get a Quote</a>
                      </div>
                  </div>
              </div>

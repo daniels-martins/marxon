@@ -1,6 +1,5 @@
 @include('backend.partials.head')
 @include('backend.partials.side_menu')
-
 <!-- ============================================================== -->
 <!-- Start Page Content here -->
 <!-- ============================================================== -->
@@ -34,13 +33,19 @@
                             <div class="form-group">
                                 <label for="title">Blog Title</label>
                                 <input type="text" class="form-control" id="title" name="title"
-                                    placeholder="Blog Title">
+                                    placeholder="Post Title">
                             </div>
 
                             <div class="form-group">
                                 <label for="slug">Slug</label>
                                 <input readonly type="text" class="form-control input-disabled disabled"
                                     id="slug" name="slug" placeholder="Blog slug">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tags"> Tags</label>
+                                <input type="text" class="form-control" id="tags" name="tags"
+                                    placeholder="tags">
                             </div>
 
                             {{-- post image --}}

@@ -10,7 +10,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="subscribe-form mt-10 wow fadeInRight delay-0-2s">
-                        <form action="services.html#">
+                        <form action="">
                             <input type="email" placeholder="Email Address" required>
                             <button type="submit">Subscribe Now</button>
                         </form>
@@ -67,7 +67,7 @@
                         <ul>
                             <li><a href="{{ route('services') }}">Social media <br> Marketing</a></li>
                             <li><a href="{{ route('services') }}">Content <br> Writing</a></li>
-                            <li><a href="services.html">Selling Tips</a></li>
+                            <li><a href="{{ route('services') }}">Selling Tips</a></li>
                             <li><a href="{{ route('services') }}">consultancy</a></li>
                             <li><a href="{{ route('services') }}">System Automation</a></li>
                         </ul>

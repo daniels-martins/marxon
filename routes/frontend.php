@@ -36,7 +36,7 @@ Route::get('/blog/{slug}', function ($slug) {
     $post = BlogPost::where('slug', $slug)->first();
     $posts = BlogPost::all();
     return view('frontend.blog-details', compact('post', 'posts'));
-})->name('blog-details');
+})->name('blog.show');
 
 
 Route::get('/about', function () {

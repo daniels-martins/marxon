@@ -9,7 +9,7 @@
                     <div class="blog-details-content rmb-75">
                         <div class="blog-item">
                             <div class="image wow fadeInUp delay-0-2s">
-                                <img src="/assets/images/blog/blog1.jpg" alt="Blog">
+                                <img src="/{{ $post->img }}" alt="{{ $post->alt }}">
                             </div>
                             <div class="blog-content wow fadeInUp delay-0-2s">
                                 <ul class="blog-meta">
@@ -23,10 +23,10 @@
                                 <p>{{ $post->pg1 }} </p>
                                 <p>{{ $post->pg2 }} </p>
 
-                                @if ($post->qoute1)
+                                @if ($post->quote1)
                                     <blockquote>
-                                        {{$post->quote1}}
-                                        <h6 class="name">{{$post->quoteAuthor()}}</h6>
+                                        {{ $post->quote1 }}
+                                        <h6 class="name">{{ $post->quoteAuthor() }}</h6>
                                     </blockquote>
                                 @endif
 
@@ -35,10 +35,10 @@
                                 @endif
 
 
-                                @if ($post->qoute2)
+                                @if ($post->quote2)
                                     <blockquote>
-                                        {{$post->qoute2}}
-                                        <h6 class="name">{{$post->quoteAuthor(2)}}</h6>
+                                        {{ $post->quote2 }}
+                                        <h6 class="name">{{ $post->quoteAuthor(2) }}</h6>
                                     </blockquote>
                                 @endif
 
@@ -200,13 +200,14 @@
                                 @foreach ($posts as $post)
                                     <div class="blog-widget-item">
                                         <div class="image">
-                                            <img src="/{{$post->img}}" alt="post image">
+                                            <img src="/{{ $post->img }}" alt="post image">
                                         </div>
                                         <div class="blog-widget-content">
                                             <ul class="blog-meta">
-                                                <li><i class="far fa-calendar-alt"></i> <a href="blog-details.html#">{{$post->created_at}}</a></li>
+                                                <li><i class="far fa-calendar-alt"></i> <a
+                                                        href="blog-details.html#">{{ $post->created_at }}</a></li>
                                             </ul>
-                                            <h5><a href="blog-details.html">{{$post->title}}</a></h5>
+                                            <h5><a href="blog-details.html">{{ $post->title }}</a></h5>
                                         </div>
                                     </div>
                                 @endforeach

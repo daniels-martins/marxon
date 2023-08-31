@@ -14,6 +14,7 @@ return new class extends Migration {
             $table->id();
             $table->string('img');
             $table->string('alt');
+            $table->string('tags')->nullable();
             $table->string('title')->unique();
             $table->string('slug')->unique();
             $table->text('pg1');
@@ -28,6 +29,7 @@ return new class extends Migration {
 
 
             //non nullable timestamps
+            
             $table->timestamp('created_at')->default(now());
             $table->timestamp('updated_at')->nullable();
         });

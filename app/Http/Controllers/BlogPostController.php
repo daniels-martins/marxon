@@ -33,6 +33,7 @@ class BlogPostController extends Controller
         $validated = $request->validate([
             'img' => 'required',
             'alt' => 'required',
+            'tags' => 'nullable',
             'title' => 'required',
             'slug' => 'required',
             'pg1' => 'required',
@@ -85,6 +86,7 @@ class BlogPostController extends Controller
         $validated = $request->validate([
             'img' => 'nullable',
             'alt' => 'required_if:img',
+            'tags' => 'nullable',
             'title' => 'required',
             'slug' => 'required',
             'pg1' => 'required',

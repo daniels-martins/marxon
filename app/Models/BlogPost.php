@@ -26,7 +26,7 @@ class BlogPost extends Model
     ];
 
 
-    public function quoteAuthor($quoteID): string
+    public function quoteAuthor($quoteID=null): string
     {
         if ($quoteID == null or $quoteID == 1) {
             $strArr = explode('@', $this->quote1);

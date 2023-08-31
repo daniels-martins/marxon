@@ -1,0 +1,10 @@
+body, img,
+picture,
+video{
+    /* background: rgb(184, 10, 10);
+    filter: invert(1) hue-rotate(180deg); */
+}
+.invert
+{
+    /* filter: invert(1)  hue-rotate(180deg) !important; */
+}

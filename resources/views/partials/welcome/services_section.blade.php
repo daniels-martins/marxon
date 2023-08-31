@@ -21,66 +21,16 @@
          </div>
          <div class="services-wrap bg-lighter br-10">
              <div class="row no-gap">
-                 {{-- <div class="col-xl-3 col-md-6">
-                     <div class="service-item wow fadeInUp delay-0-2s">
-                         <div class="icon">
-                             <img src="assets/images/services/icon1.png" alt="Icon">
-                         </div>
-                         <h4>Brand Identity Design</h4>
-                         <h4>Brand Awareness</h4>
-                         <h4>Graphics Design</h4>
-                         <a href="{{ route('services') }}" class="read-more">Explore <i
-                                 class="fas fa-long-arrow-alt-right"></i></a>
-                     </div>
-                 </div> --}}
-                 {{-- <div class="col-xl-3 col-md-6">
-                     <div class="service-item wow fadeInUp delay-0-4s">
-                         <div class="icon">
-                             <img src="assets/images/services/icon2.png" alt="Icon">
-                         </div>
-                         <h4>Product listing</h4>
-                         <h4>ads management</h4>
-                         <h4>Digital Marketing</h4>
-                         <h4>Search Engine Optimization (SEO)</h4>
-                         <a href="{{ route('services') }}" class="read-more">Explore <i
-                                 class="fas fa-long-arrow-alt-right"></i></a>
-                     </div>
-                 </div> --}}
-
-                 {{-- <div class="col-xl-4 col-md-6">
-                     <div class="service-item wow fadeInUp delay-0-2s">
-                         <div class="icon">
-                             <img src="assets/images/services/icon1.png" alt="Icon">
-                         </div>
-                         <h4>Digital Marketing</h4>
-                         <a href="{{ route('services') }}" class="read-more">Explore <i
-                                 class="fas fa-long-arrow-alt-right"></i></a>
-                     </div>
+                 @php
+                     $services = $services->take(6);
+                 @endphp
+                 {{-- services grid --}}
+                 @include('partials/general/services_grid')
+                 <div class="col-12 my-25 text-center">
+                     <a href="{{ route('services') }}" class="view-more mt-25">
+                         View All Services <i class="fas fa-long-arrow-alt-right"></i>
+                     </a>
                  </div>
-
-                 <div class="col-xl-4 col-md-6">
-                     <div class="service-item wow fadeInUp delay-0-6s">
-                         <div class="icon">
-                             <img src="assets/images/services/icon3.png" alt="Icon">
-                         </div>
-                         <h4>Search Engine Optimization (SEO)</h4>
-                         <a href="{{ route('services') }}" class="read-more">Explore <i
-                                 class="fas fa-long-arrow-alt-right"></i></a>
-                     </div>
-                 </div>
-                 <div class="col-xl-4 col-md-6">
-                     <div class="service-item wow fadeInUp delay-0-8s">
-                         <div class="icon">
-                             <img src="assets/images/services/icon4.png" alt="Icon">
-                         </div>
-                         <h4>Web & mobile app Development (Full stack)</h4>
-                         <a href="{{ route('services') }}" class="read-more">Explore <i
-                                 class="fas fa-long-arrow-alt-right"></i></a>
-                     </div>
-                 </div> --}}
-                {{-- services grid --}}
-                @include('partials/general/services_grid')
-
              </div>
          </div>
      </div>

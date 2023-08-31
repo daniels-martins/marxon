@@ -7,33 +7,34 @@
             <div class="row blog-row">
                 <div class="col-lg-8">
                     <div class="blog-standard-wrap rmb-75">
-                        <div class="blog-item wow fadeInUp delay-0-2s">
-                            <div class="image">
-                                <img src="assets/images/blog/blog1.jpg" alt="Blog">
-                            </div>
-                            <div class="blog-content">
-                                <ul class="blog-meta">
-                                    <li><i class="far fa-calendar-alt"></i> <a href="blog.html#">18 March, 2022</a>
-                                    </li>
-                                    <li><i class="far fa-user"></i> <a href="blog.html#">by - Admin</a></li>
-                                    <li><i class="far fa-comment-dots"></i> <a href="blog.html#">5 Comments</a></li>
-                                </ul>
-                                <h3><a href="blog-details.html">Always gives you digital graphic designing </a></h3>
-                                <p>Aliquam lectus dui, tempus vitae scelerisque sit amet, efficitur a quam. Fusce
-                                    pretium eleifend pulvinar. Morbi sit amet augue non felis vulputate fermentum.
-                                    Nunc vitae quam sed ex porta placerat. Vestibulum sodales </p>
-                                <div class="btn-share">
-                                    <a href="blog-details.html" class="theme-btn">Read More</a>
-                                    <div class="share-icons">
-                                        <b>Share :</b>
-                                        <a href="blog.html#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="blog.html#"><i class="fab fa-twitter"></i></a>
-                                        <a href="blog.html#"><i class="fab fa-linkedin-in"></i></a>
-                                        <a href="blog.html#"><i class="fab fa-google-plus-g"></i></a>
+                        @foreach ($blogPosts as $post)
+                            <div class="blog-item wow fadeInUp delay-0-2s">
+                                <div class="image">
+                                    <img src="assets/images/blog/blog1.jpg" alt="Blog">
+                                </div>
+                                <div class="blog-content">
+                                    <ul class="blog-meta">
+                                        <li><i class="far fa-calendar-alt"></i> <a
+                                                href="#">{{ $post->created_at }}</a>
+                                        </li>
+                                        <li><i class="far fa-user"></i> <a href="#">by - Admin</a></li>
+                                        <li><i class="far fa-comment-dots"></i> <a href="#">5 Comments</a></li>
+                                    </ul>
+                                    <h3><a href="{{ route('blog-details', $post->slug) }}">{{ $post->title }} </a></h3>
+                                    <p>{{substr($post->pg1, 50) . '...'}} </p>
+                                    <div class="btn-share">
+                                        <a href="{{ route('blog-details', 'how-to-code') }}" class="theme-btn">Read More</a>
+                                        <div class="share-icons">
+                                            <b>Share :</b>
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        @endforeach
                         <div class="blog-item wow fadeInUp delay-0-2s">
                             <div class="image">
                                 <img src="assets/images/blog/blog2.jpg" alt="Blog">

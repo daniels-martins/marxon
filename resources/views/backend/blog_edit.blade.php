@@ -12,7 +12,7 @@
         <div class="container-fluid">
 
             <!-- start  -->
-            <div class="row">
+ w           <div class="row">
                 <div class="col-12">
                     <div>
                         <h4 class="header-title mb-3">Update Blog</h4>

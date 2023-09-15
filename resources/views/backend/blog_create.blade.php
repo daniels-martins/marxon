@@ -38,7 +38,7 @@
 
                             <div class="form-group">
                                 <label for="slug">Slug</label>
-                                <input readonly type="text" class="form-control input-disabled disabled"
+                                <input style="cursor: not-allowed" readonly type="text" class="form-control input-disabled disabled"
                                     id="slug" name="slug" placeholder="Blog slug">
                             </div>
 

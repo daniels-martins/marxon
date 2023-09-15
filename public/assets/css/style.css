@@ -384,7 +384,7 @@ input[type=radio] {
   display: inline-block;
   text-transform: uppercase;
   text-decoration: underline;
-  font-family: "Domine", serif;
+  font-family: inherit;
 }
 
 .text-white .sub-title {
@@ -405,7 +405,7 @@ a.theme-btn {
   display: inline-block;
   text-transform: uppercase;
   background: var(--pry-color);
-  font-family: "Domine", serif;
+  font-family: inherit;
   border: 1px solid var(--pry-color);
 }
 
@@ -481,7 +481,7 @@ a.theme-btn.style-two:hover {
   display: flex;
   font-weight: 700;
   color: #1B1D21;
-  font-family: "Domine", serif;
+  font-family: inherit;
 }
 
 .list-style-one li:before {
@@ -834,7 +834,7 @@ h6,
 .pricing-item .price {
   font-weight: 700;
   color: #1B1D21;
-  font-family: "Domine", serif;
+  font-family: inherit;
 }
 
 /*******************************************************/
@@ -4512,7 +4512,7 @@ h6,
   -ms-flex-pack: center;
   justify-content: center;
   background: transparent;
-  font-family: "Domine", serif;
+  font-family: inherit;
   text-transform: capitalize;
 }
 
@@ -4678,7 +4678,7 @@ h6,
   margin-bottom: 10px;
   padding: 15px 40px;
   color: var(--pry-color);
-  font-family: "Domine", serif;
+  font-family: inherit;
   text-transform: capitalize;
   border: 1px solid var(--pry-color);
 }
@@ -4961,7 +4961,7 @@ h6,
   margin-bottom: 10px;
   color: var(--pry-color);
   display: inline-block;
-  font-family: "Domine", serif;
+  font-family: inherit;
 }
 
 .portfolio-hover h4 {
@@ -5103,7 +5103,7 @@ h6,
 
 .portfolio-description table b {
   color: white;
-  font-family: "Domine", serif;
+  font-family: inherit;
 }
 
 .portfolio-description table .social-style-one a {
@@ -5182,7 +5182,7 @@ h6,
 
 .portfolio-footer-nav .next-prev-item span {
   color: var(--pry-color);
-  font-family: "Domine", serif;
+  font-family: inherit;
 }
 
 .portfolio-footer-nav .next-prev-item.prev {
@@ -5330,7 +5330,7 @@ h6,
   margin-bottom: 10px;
   color: var(--pry-color);
   display: inline-block;
-  font-family: "Domine", serif;
+  font-family: inherit;
 }
 
 .product-hover h4 {
@@ -5472,7 +5472,7 @@ h6,
 
 .product-description table b {
   color: white;
-  font-family: "Domine", serif;
+  font-family: inherit;
 }
 
 .product-description table .social-style-one a {
@@ -5551,7 +5551,7 @@ h6,
 
 .product-footer-nav .next-prev-item span {
   color: var(--pry-color);
-  font-family: "Domine", serif;
+  font-family: inherit;
 }
 
 .product-footer-nav .next-prev-item.prev {
@@ -5929,7 +5929,7 @@ h6,
   font-weight: 700;
   color: var(--pry-color);
   text-transform: capitalize;
-  font-family: "Domine", serif;
+  font-family: inherit;
 }
 
 .team-wrap {
@@ -6071,7 +6071,7 @@ h6,
   font-size: 14px;
   font-weight: 700;
   color: var(--pry-color);
-  font-family: "Domine", serif;
+  font-family: inherit;
 }
 
 /*******************************************************/
@@ -6107,7 +6107,7 @@ h6,
   border-radius: 0;
   color: #1B1D21;
   background: transparent;
-  font-family: "Domine", serif;
+  font-family: inherit;
   text-transform: capitalize;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6427,7 +6427,7 @@ h6,
 }
 
 .blog-content .btn-share b {
-  font-family: "Domine", serif;
+  font-family: inherit;
 }
 
 .blog-meta {
@@ -6504,7 +6504,7 @@ h6,
   border-radius: 10px;
   color: #1B1D21;
   background: #F6F6F6;
-  font-family: "Domine", serif;
+  font-family: inherit;
 }
 
 @media only screen and (max-width: 480px) {
@@ -7216,7 +7216,7 @@ h6,
 
 .footer-contact a {
   font-weight: 700;
-  font-family: "Domine", serif;
+  font-family: inherit;
 }
 
 .menu-widget ul li {
@@ -7289,7 +7289,7 @@ h6,
 .copyright-area p {
   font-weight: 700;
   margin-right: 25px;
-  font-family: "Domine", serif;
+  font-family: inherit;
 }
 
 .copyright-area p a {
@@ -7305,7 +7305,7 @@ h6,
   font-weight: 700;
   margin-bottom: 5px;
   text-transform: capitalize;
-  font-family: "Domine", serif;
+  font-family: inherit;
 }
 
 .copyright-area .footer-menu li {

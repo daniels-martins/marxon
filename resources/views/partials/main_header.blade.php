@@ -80,9 +80,7 @@
                      </div>
 
                      <!-- menu Btn -->
-                     <div class="menu-btn">
-                        <a href="{{ route('contact') }}" class="theme-btn br-5">Get a Quote</a>
-                     </div>
+                    <x-get-quote />
                  </div>
              </div>
          </div>

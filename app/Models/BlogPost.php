@@ -38,5 +38,4 @@ class BlogPost extends Model
         return $strArr[1] ?? 'Daniels Martins';
     }
 
-
 }

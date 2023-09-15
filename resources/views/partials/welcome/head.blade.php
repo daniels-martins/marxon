@@ -10,9 +10,10 @@
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <!--====== Google Fonts ======-->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mooli">
+
+
 
     <!--====== Flaticon ======-->
     <link rel="stylesheet" href="assets/css/flaticon.min.css">
@@ -29,7 +30,7 @@
     <!--====== Main Style ======-->
     <link rel="stylesheet" href="assets/css/style.css">
 
-     {{-- Udo style --}}
+    {{-- Udo style --}}
     <link rel="stylesheet" href="assets/css/main.css">
 
 

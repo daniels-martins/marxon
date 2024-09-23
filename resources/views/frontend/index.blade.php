@@ -317,7 +317,7 @@
                         <div class="solution-content wow fadeInRight delay-0-2s">
                             <div class="section-title mb-25">
                                 <span class="sub-title mb-15">Marketing solution</span>
-                                <h2>Grow Your Business in a <span>digital way</span></h2>
+                                <h2>Grow Your Business the <span>digital way</span></h2>
                             </div>
                             <p>totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
                                 vitae dicta sunt</p>

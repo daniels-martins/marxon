@@ -11,7 +11,7 @@
                 <div class="solution-content wow fadeInRight delay-0-2s">
                     <div class="section-title mb-25">
                         <span class="sub-title mb-15">Marketing solution</span>
-                        <h2>Grow Your Business in a <span>digital way</span></h2>
+                        <h2>Grow Your Business <span>digitally</span></h2>
                     </div>
                     <p>Grow your business with a digital presence that is tailored to your specific needs.</p>
                     <div class="skillbar-items pt-25">

@@ -7,8 +7,11 @@
 
              <div class="header-inner d-flex align-items-center">
                  <div class="logo-outer d-flex align-items-center">
-                     <div class="logo"><a href="{{ route('welcome') }}"><img src="/assets/images/logos/logo.png"
-                                 alt="Logo" title="Logo"></a></div>
+                     <div class="logo">
+                         <a href="{{ route('welcome') }}">
+                             <img src="/assets/images/logos/logo.png"alt="Logo" title="Logo">
+                         </a>
+                     </div>
                  </div>
 
                  <div class="nav-outer clearfix">
@@ -80,7 +83,7 @@
                      </div>
 
                      <!-- menu Btn -->
-                    <x-get-quote />
+                     <x-get-quote />
                  </div>
              </div>
          </div>

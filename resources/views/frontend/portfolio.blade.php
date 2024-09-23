@@ -76,7 +76,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-12">
+                {{-- <div class="col-lg-12">
                     <nav aria-label="...">
                         <ul class="pagination flex-wrap justify-content-center pt-25">
                             <li class="page-item disabled">
@@ -95,7 +95,7 @@
                             </li>
                         </ul>
                     </nav>
-                </div>
+                </div> --}}
             </div>
         </div>
         <img class="circle-shape" src="/assets/images/shapes/circle.png" alt="Shape">

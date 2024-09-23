@@ -1,0 +1,20 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+@import url("https://fonts.googleapis.com/css?family=Mooli");
+
+/* <!--====== Flaticon ======--> */
+@import "./flaticon.min.css";
+/* <!--====== Font Awesome ======--> */
+@import "./font-awesome-5.9.0.min.css";
+/* <!--====== Bootstrap ======--> */
+@import "./bootstrap-4.5.3.min.css";
+/* <!--====== Magnific Popup ======--> */
+@import "./magnific-popup.min.css";
+/* <!--====== Animate ======--> */
+@import "./animate.min.css";
+/* <!--====== Slick ======--> */
+@import "./slick.min.css";
+/* <!--====== Main Style ======--> */
+@import "./style.css";
+/* {{-- Udo style --}} */
+@import "./main.css";

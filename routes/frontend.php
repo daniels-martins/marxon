@@ -3,6 +3,7 @@
 use App\Models\Service;
 use App\Models\BlogPost;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\NewsletterSubscriptionController;
 
 
 Route::get('/', function () {
@@ -61,3 +62,9 @@ Route::get('/products/{id}/show', function () {
 Route::get('/pricing', function () {
     return view('frontend.pricing');
 })->name('pricing');
+
+
+
+// Newsletters
+Route::get('newsletter_subscriptions', [NewsletterSubscriptionController::class, 'index'])
+->name('newsletter');

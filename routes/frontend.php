@@ -63,11 +63,15 @@ Route::get('/pricing', function () {
     return view('frontend.pricing');
 })->name('pricing');
 
-
-
 // Newsletters admin only
 Route::get('newsletter_subscriptions', [NewsletterSubscriptionController::class, 'index'])
 ->name('newsletter_subscriptions.index');
 
 Route::post('newsletter_subscriptions', [NewsletterSubscriptionController::class, 'store'])
 ->name('newsletter.subscribe');
+
+Route::get('newsletter_subscriptions/{email}', [NewsletterSubscriptionController::class, 'requestToUnsubscribe'])
+->name('newsletter.unsubscribe.request');
+
+Route::get('newsletter_subscriptions/{email}/delete/', [NewsletterSubscriptionController::class, 'destroy'])
+->name('newsletter.unsubscribe.confirm');

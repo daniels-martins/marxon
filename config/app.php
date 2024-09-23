@@ -185,4 +185,6 @@ return [
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
+
+    'dev_email' => env('DEV_EMAIL', 'marxoan7@gmail.com'),
 ];

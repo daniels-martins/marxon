@@ -10,7 +10,7 @@
              </div>
              <div class="col-xl-5 col-lg-6">
                  <div class="service-title-content wow fadeInRight delay-0-2s">
-                     <p> At Marxon Tech Solutions, we build better and effective websites and applications that will
+                     <p> At {{ config('app.name') }}, we build better and effective websites and applications that will
                          boost your business visibility online, thereby leading more clients to your business on A DAILY
                          BASIS.
                      </p>

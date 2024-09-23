@@ -16,14 +16,14 @@
                      <p style="text-transform: none">
                          If you're looking for a reliable and experienced web development and digital agency to take
                          your online
-                         presence to the next level, look no further than Marxon Tech Solutions.
+                         presence to the next level, look no further than {{ config('app.name') }}.
 
                          {{-- Do you want to know how we can achieve this success for your business using modern web
                          techologies,frameworks and tools?
 
                          Then what are you waiting for? Contact us today to discuss your project and discover how we can
                          help you achieve your online goals --}}
-                        </p>
+                     </p>
                      <ul class="list-style-one pt-10 pb-50">
                          <li>Content Generation and Optimization</li>
                          <li>Integrated Online Marketing Strategies</li>

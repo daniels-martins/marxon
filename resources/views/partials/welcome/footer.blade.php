@@ -73,7 +73,7 @@
             </div>
         </div>
         <div class="copyright-area">
-            <p>© 2022. <a href="index.html">Marxon</a> All rights reserved.</p>
+            <p>© 2022. <a href="index.html">{{ config('app.name') }}</a> All rights reserved.</p>
             <ul class="footer-menu py-5">
                 <li><a href="{{ route('contact') }}">support</a></li>
                 <li><a href="{{ route('contact') }}">Privacy</a></li>

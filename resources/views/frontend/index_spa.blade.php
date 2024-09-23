@@ -25,9 +25,9 @@
 
         @include('partials.welcome.portfolio_section')
 
-        @include('partials.welcome.pricing_section')
+        {{-- @include('partials.welcome.pricing_section')
 
-        @include('partials.welcome.team_section')
+        @include('partials.welcome.team_section') --}}
 
         @include('partials.welcome.testimonials')
 

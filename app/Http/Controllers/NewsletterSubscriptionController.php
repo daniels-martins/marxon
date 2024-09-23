@@ -28,7 +28,20 @@ class NewsletterSubscriptionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'email' => 'required|email',
+            'fullname' => 'required|string',
+        ]);
+
+        $subscribed = NewsletterSubscription::create([
+            'email' => $validated['email'],
+        ]);
+        $subscribed
+            ? flash('Subscription Successful. Check your mail for further instructions')
+            : flash()->addError('Oops! Try again...');
+
+        // return back()->;
+        url()->previous();
     }
 
     /**
@@ -36,7 +49,6 @@ class NewsletterSubscriptionController extends Controller
      */
     public function show(NewsletterSubscription $newsletterSubscription)
     {
-        //
     }
 
     /**

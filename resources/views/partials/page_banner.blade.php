@@ -6,7 +6,7 @@
              <h2 class="page-title wow fadeInUp delay-0-2s">{{ presentRouteName() }}</h2>
              <nav aria-label="breadcrumb">
                  <ol class="breadcrumb wow fadeInUp delay-0-4s">
-                     <li class="breadcrumb-item"><a href="{{route('welcome')}}">Home</a></li>
+                     <li class="breadcrumb-item"><a href="{{ route('landingpage') }}">Home</a></li>
                      <li class="breadcrumb-item active">{{ presentRouteName() }}</li>
                  </ol>
              </nav>

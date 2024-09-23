@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>Marxon - Best Digital Agency in Nigeria || Home</title>
+    <title>{{ config('app.name') }} - Best Digital Agency in Nigeria || Home</title>
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <!--====== Google Fonts ======-->
@@ -52,7 +52,7 @@
                             <div class="logo">
                                 <a href="index.html">
                                     <!-- <img src="assets/images/logos/logo.png" alt="Logo" title="Logo"> -->
-                                    <span class="h1 text-black"> Marxon </span>
+                                    <span class="h1 text-black"> {{ config('app.name') }} </span>
                                 </a>
                             </div>
                             <div class="header-contact">
@@ -788,7 +788,7 @@
                     </div>
                 </div>
                 <div class="copyright-area">
-                    <p>© 2022. <a href="index.html">Marxon</a> All rights reserved.</p>
+                    <p>© 2022. <a href="index.html">{{ config('app.name') }}</a> All rights reserved.</p>
                     <ul class="footer-menu py-5">
                         <li><a href="contact.html">support</a></li>
                         <li><a href="contact.html">Privacy</a></li>

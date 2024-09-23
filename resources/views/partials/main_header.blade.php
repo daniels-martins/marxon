@@ -8,7 +8,7 @@
              <div class="header-inner d-flex align-items-center">
                  <div class="logo-outer d-flex align-items-center">
                      <div class="logo">
-                         <a href="{{ route('welcome') }}">
+                         <a href="{{ route('landingpage') }}">
                              <img src="/assets/images/logos/logo.png"alt="Logo" title="Logo">
                          </a>
                      </div>
@@ -29,7 +29,7 @@
 
                          <div class="navbar-collapse collapse clearfix">
                              <ul class="navigation clearfix">
-                                 <li><a href="{{ route('welcome') }}"
+                                 <li><a href="{{ route('landingpage') }}"
                                          class=" @if (Route::currentRouteName() == 'welcome') underline @endif">
                                          home
                                      </a>

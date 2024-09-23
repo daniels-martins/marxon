@@ -9,7 +9,7 @@ use App\Http\Controllers\NewsletterSubscriptionController;
 Route::get('/', function () {
    $services = Service::all();
     return view('frontend.index_spa', compact('services'));
-})->name('welcome');
+})->name('landingpage');
 
 
 // share the same layout file
@@ -65,6 +65,9 @@ Route::get('/pricing', function () {
 
 
 
-// Newsletters
+// Newsletters admin only
 Route::get('newsletter_subscriptions', [NewsletterSubscriptionController::class, 'index'])
-->name('newsletter');
+->name('newsletter_subscriptions.index');
+
+Route::post('newsletter_subscriptions', [NewsletterSubscriptionController::class, 'store'])
+->name('newsletter.subscribe');

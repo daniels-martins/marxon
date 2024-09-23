@@ -1,25 +1,8 @@
 <!-- Footer Area Start -->
 <footer class="main-footer bg-dark-blue rel z-1 text-white mt-100">
     <div class="container">
-        <div class="subscribe-wrap text-white bg-blue br-10">
-            <div class="row align-itmes-center">
-                <div class="col-lg-6">
-                    <div class="section-title wow fadeInLeft delay-0-2s">
-                        <h3> Sign up for our email list and be the first to know about our latest offers </h3>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="subscribe-form mt-10 wow fadeInRight delay-0-2s">
-                        <form action="">
-                            <input type="email" placeholder="Email Address" required>
-                            <button type="submit">Subscribe Now</button>
-                        </form>
-                        <span>Trusted By 50+ Clients</span>
-                        <img src="/assets/images/shapes/hand.png" alt="hand" class="hand">
-                    </div>
-                </div>
-            </div>
-        </div>
+        @include('partials.general.newsletter_section')
+
         <div class="row justify-content-between">
             <div class="col-xl-2 col-lg-3 col-sm-6">
                 <div class="footer-widget about-widget">
@@ -31,7 +14,7 @@
 
                     <div class="footer-contact mt-30">
                         <i class="flaticon-mail"></i>
-                        <span style="text-transform: none"><strong> info@marxon.com.ng</strong></span>
+                        <span style="text-transform: none"><strong> info@marxoan.com.ng</strong></span>
 
                         {{-- <a href="/assets/cdn-cgi/scripts/email-decode.min.js"><span
                                 class="__cf_email__"
@@ -88,7 +71,7 @@
             </div>
         </div>
         <div class="copyright-area">
-            <p>©2016 - {{ date('Y') }}. <a href="/" class="text-success">Marxon &trade;</a> All rights
+            <p>©2016 - {{ date('Y') }}. <a href="/" class="text-success">marxoan &trade;</a> All rights
                 reserved.</p>
             <ul class="footer-menu py-5 px-5">
                 <li><a href="{{ route('contact') }}">support</a></li>

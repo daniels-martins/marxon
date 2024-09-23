@@ -3,20 +3,6 @@ body, .page-wrapper{
     font-family: "Mooli", sans-serif !important;
 }
 
-/* 
-{{-- body, h1, h2, h3, h4, h5, p, div, span, --}}
-h1, h2, h3, h4, h5, h6{
-font-family: "Sofia", sans-serif; !important
-}
-{{-- body, a, a.nav-link, a.theme-button, button, .btn, .view-more, .read-more, .main-menu .navbar-collapse li a,
-.success-item p, .count-text, .skill-bar-percent,
-.pricing-item .price --}}
- */
-
- /* a {
-    font-family: "Sofia", sans-serif !important; 
-    } */
-
  .uppercase {
     text-transform: uppercase;
 }
@@ -41,3 +27,7 @@ font-family: "Sofia", sans-serif; !important
 }
 
 
+.text-red-500 {
+    --tw-text-opacity: 1;
+    color: rgb(239 68 68 / var(--tw-text-opacity)) /* #ef4444 */;
+}

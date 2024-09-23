@@ -1,14 +1,14 @@
 /*-----------------------------------------------------------------------------------
-    Template Name: Marxon - Best Digital Agency in Nigeria
-    Template URI: https://webtend.net/demo/html/Marxon/
+    Template Name: marxoan - Best Digital Agency in Nigeria
+    Template URI: https://webtend.net/demo/html/marxoan/
     Author: WebTend
     Author URI:  https://webtend.net/
     Version: 1.0
 
     Note: This is Main JS File.
 -----------------------------------------------------------------------------------
-	CSS INDEX
-	===================
+    CSS INDEX
+    ===================
     01. Header
     02. Dropdown menu
     03. Submenu Dropdown
@@ -203,7 +203,7 @@
                 prevArrow: $(".product-prev"),
                 nextArrow: $(".product-next"),
                 responsive: [
-                    
+
                     {
                         breakpoint: 1700,
                         settings: {

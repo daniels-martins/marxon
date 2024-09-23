@@ -6,7 +6,7 @@ this refers to alt text for blog images, so they explain the images better,
 rather than using a generic or random alt text for all post images
 
 
-Free blog post from poe for marxon
+Free blog post from poe for marxoan
 
 [user]:generate a blog post about how to start a digital web agency
 [assistant]:Here are some tips on how to start a digital web agency:

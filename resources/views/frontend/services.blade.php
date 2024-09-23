@@ -33,7 +33,7 @@
                         </div>
                         <p style="text-transform: none;">
                             We optimize your digital strategies, creating responsive designs and engaging mobile experiences
-                            that captivate your audience. Trust Marxon Inc. to deliver the creative solutions you need to
+                            that captivate your audience. Trust {{ config('app.name') }}. to deliver the creative solutions you need to
                             thrive in the digital age.
                         </p>
                         <ul class="list-style-one mt-30">
@@ -59,6 +59,6 @@
 
 
     <!-- Testimonial Section Start -->
-        @include('partials.welcome.testimonials')
+    @include('partials.welcome.testimonials')
     <!-- Testimonial Section End -->
 @endsection

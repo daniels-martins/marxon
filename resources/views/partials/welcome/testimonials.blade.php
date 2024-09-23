@@ -18,7 +18,8 @@
              <div class="col-lg-8">
                  <div class="testimonial-wrap">
                      <div class="testimonial-item wow fadeInUp delay-0-4s">
-                         <p>"Marxon is a top-notch digital web agency that provides exceptional service. They are always
+                         <p>"{{ config('app.name') }} is a top-notch digital web agency that provides exceptional service. They are
+                             always
                              responsive and willing to go the extra mile to meet our needs. We would highly recommend
                              them to anyone looking for a digital web agency."</p>
                          <div class="testimonial-author">
@@ -34,7 +35,7 @@
                      <div class="testimonial-item wow fadeInUp delay-0-6s">
                          <p>"They were able to
                              understand our needs and deliver a website that was both visually appealing and functional.
-                             We also appreciate their ongoing support and guidance. We would highly recommend Marxon to
+                             We also appreciate their ongoing support and guidance. We would highly recommend marxoan to
                              anyone looking for a digital web agency."</p>
                          <div class="testimonial-author">
                              <div class="image">
@@ -48,7 +49,7 @@
                      </div>
                      <div class="testimonial-item">
                          <p>"We were looking for a digital web agency to help us with our website redesign and marketing
-                             efforts. We were very impressed with the work that Marxon did for us."</p>
+                             efforts. We were very impressed with the work that marxoan did for us."</p>
                          <div class="testimonial-author">
                              <div class="image">
                                  <img src="assets/images/testimonials/author1.jpg" alt="Testimonial">
@@ -60,7 +61,7 @@
                          </div>
                      </div>
                      <div class="testimonial-item">
-                         <p>"Marxon is a great digital web agency that can help you with all your website needs. They
+                         <p>"marxoan is a great digital web agency that can help you with all your website needs. They
                              are a team of experts who are passionate about creating beautiful and effective websites. I
                              highly recommend them!"</p>
                          <div class="testimonial-author">

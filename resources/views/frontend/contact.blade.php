@@ -21,7 +21,7 @@
                                 <i class="flaticon-mail"></i>
                                 <div class="content">
                                     <h5>email</h5>
-                                    <span style="text-transform: none"><strong> info@marxon.com.ng</strong></span>
+                                    <span style="text-transform: none"><strong> info@marxoan.com.ng</strong></span>
                                     {{-- <a
                                         href="https://demo.webtend.net/cdn-cgi/l/email-protection#b0d9ded6dff0c4d5dcd3df9ed3dfdd"><span
                                             class="__cf_email__"

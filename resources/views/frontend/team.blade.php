@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>Marxon - Best Digital Agency in Nigeria || Team Member</title>
+    <title>{{ config('app.name') }} - Best Digital Agency in Nigeria || Team Member</title>
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <!--====== Google Fonts ======-->
@@ -49,8 +49,8 @@
 
                     <div class="header-inner d-flex align-items-center">
                         <div class="logo-outer d-flex align-items-center">
-                            <div class="logo"><a href="index.html"><img src="assets/images/logos/logo.png" alt="Logo"
-                                        title="Logo"></a></div>
+                            <div class="logo"><a href="index.html"><img src="assets/images/logos/logo.png"
+                                        alt="Logo" title="Logo"></a></div>
                         </div>
 
                         <div class="nav-outer clearfix">
@@ -113,7 +113,7 @@
                             </div>
 
                             <!-- menu Btn -->
-                          <x-get-quote />
+                            <x-get-quote />
                         </div>
                     </div>
                 </div>
@@ -446,7 +446,8 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="footer-widget about-widget">
                             <div class="footer-logo mb-30">
-                                <a href="index.html"><img src="assets/images/logos/logo-white.png" alt="Logo"></a>
+                                <a href="index.html"><img src="assets/images/logos/logo-white.png"
+                                        alt="Logo"></a>
                             </div>
                             <p>129 Lily Cl, London W14 9YB, United Kingdom</p>
                             <div class="footer-contact mt-30">
@@ -496,7 +497,7 @@
                     </div>
                 </div>
                 <div class="copyright-area">
-                    <p>© 2022. <a href="index.html">Marxon</a> All rights reserved.</p>
+                    <p>© 2022. <a href="index.html">{{ config('app.name') }}</a> All rights reserved.</p>
                     <ul class="footer-menu py-5">
                         <li><a href="contact.html">support</a></li>
                         <li><a href="contact.html">Privacy</a></li>

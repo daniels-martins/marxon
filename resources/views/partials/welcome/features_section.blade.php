@@ -38,13 +38,13 @@
 
         {{-- second row --}}
         <div class="row">
-            <div class="order-0 col-lg-6 align-self-end">
-                <div class="features-image text-lg-right wow fadeInLeft delay-0-2s">
+            <div class=" order-0 order-sm-0 col-lg-7 align-self-end">
+                <div class="mx-5 features-image text-lg-left wow fadeInLeft delay-0-2s">
                     <img src="assets/images/services/feature.png" alt="Features">
                 </div>
             </div>
 
-            <div class="order-1  col-lg-6 align-self-center">
+            <div class="order-1 order-sm-1 col-lg-5 align-self-center">
                 <div class="feature-content pt-135 rpt-95 pb-140 rpb-65 wow fadeInRight delay-0-2s">
                     <div class="section-title mb-25">
                         <span class="sub-title mb-15">Core Features</span>
@@ -125,13 +125,13 @@
 
         {{-- fourth row --}}
         <div class="row">
-            <div class="order-0  col-lg-6 align-self-end">
-                <div class="features-image text-lg-right wow fadeInLeft delay-0-2s">
+            <div class="order-0  col-lg-7 align-self-end">
+                <div class="mx-5 features-image text-lg-right wow fadeInLeft delay-0-2s">
                     <img src="assets/images/services/feature.png" alt="Features">
                 </div>
             </div>
 
-            <div class="order-1  col-lg-6 align-self-center">
+            <div class="order-1  col-lg-5 align-self-center">
                 <div class="feature-content pt-135 rpt-95 pb-140 rpb-65 wow fadeInRight delay-0-2s">
                     <div class="section-title mb-25">
                         <span class="sub-title mb-15">Core Features</span>

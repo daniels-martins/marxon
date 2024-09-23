@@ -1,9 +1,7 @@
 <?php
 
-use App\Models\Service;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TinkerController;
-use App\Models\BlogPost;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,27 +14,16 @@ use App\Models\BlogPost;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// })->name('welcome_old');
+require __DIR__ . '/web_backup.php';
 
-/*
-|--------------------------------------------------------------------------
-| SEO RULES FOR Routes
-|--------------------------------------------------------------------------
-|
-| Don't use ID's (numbers) for route url constructions eg. in product.show
-| rather use product slugs or item slugs, ie. sth that has meaning to
-| Search Engines, sth that they can understand
-|
-*/
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
-//frontend routes
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
 
-require 'frontend.php';
-
-// Backend routes
-require 'backend.php';
-
-// dev routes
-Route::get('/tinker',[TinkerController::class, 'index'])->name('pricing');
+require __DIR__.'/auth.php';

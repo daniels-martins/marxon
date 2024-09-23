@@ -31,7 +31,8 @@ use App\Http\Controllers\TinkerController;
 |
 */
 
-Route::prefix('admin')->group(function () {
+// move to tailwind dashboard later
+Route::middleware("auth")->prefix('admin')->group(function () {
 
 Route::get('/', function () {
    $services = Service::all();

@@ -49,7 +49,7 @@
 
                     <div class="header-inner d-flex align-items-center">
                         <div class="logo-outer d-flex align-items-center">
-                            <div class="logo"><a href="index.html"><img src="assets/images/logos/logo.png"
+                            <div class="logo"><a href="index.html"><img src="assets/images/logos/logo.svg"
                                         alt="Logo" title="Logo"></a></div>
                         </div>
 

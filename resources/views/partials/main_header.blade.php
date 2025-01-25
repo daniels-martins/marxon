@@ -9,7 +9,7 @@
                  <div class="logo-outer d-flex align-items-center">
                      <div class="logo">
                          <a href="{{ route('landingpage') }}">
-                             <img src="/assets/images/logos/logo.png"alt="Logo" title="Logo">
+                             <img src="/assets/images/logos/logo.svg"alt="Logo" title="Logo">
                          </a>
                      </div>
                  </div>

@@ -7,8 +7,11 @@
 
             <div class="header-inner d-flex align-items-center">
                 <div class="logo-outer d-flex align-items-center">
-                    <div class="logo"><a href="#"><img src="assets/images/logos/logo.png" alt="Logo"
-                                title="Logo"></a></div>
+                    <div class="logo">
+                        <a href="#">
+                            <img src="assets/images/logos/logo.svg" alt="Logo" title="Logo">
+                        </a>
+                    </div>
                     <div class="header-contact">
                         <i class="flaticon-call"></i>
                         <div class="content">
@@ -38,7 +41,7 @@
                                 <li><a href="#services">services</a></li>
                                 <li><a href="#products">products</a></li>
                                 <li><a href="#portfolio">portfolio</a></li>
-                                 <li class="dropdown"><a href="#">sections</a>
+                                <li class="dropdown"><a href="#">sections</a>
                                     <ul>
                                         <li><a href="#feature">features</a></li>
                                         <li><a href="#solution">solution</a></li>
@@ -67,7 +70,7 @@
                     </div> --}}
 
                     <!-- menu Btn -->
-                   <x-get-quote />
+                    <x-get-quote />
                 </div>
             </div>
         </div>

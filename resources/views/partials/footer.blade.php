@@ -7,7 +7,8 @@
             <div class="col-xl-2 col-lg-3 col-sm-6">
                 <div class="footer-widget about-widget">
                     <div class="footer-logo mb-30">
-                        <a href="index.html"><img src="/assets/images/logos/logo-white.png" alt="Logo"></a>
+                        {{-- <a href="index.html"><img src="/assets/images/logos/variants/no-bg/image-2-nobg.png" alt="Logo"></a> --}}
+                        <a href="index.html"><img src="/assets/images/logos/logo_transparent.png" alt="Logo"></a>
                     </div>
                     {{-- <p>129 Lily Cl, London W14 9YB, United Kingdom</p> --}}
                     <p>22, Olajide Street, off Itire Road, Lagos</p>

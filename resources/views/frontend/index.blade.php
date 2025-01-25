@@ -51,7 +51,7 @@
                         <div class="logo-outer d-flex align-items-center">
                             <div class="logo">
                                 <a href="index.html">
-                                    <!-- <img src="assets/images/logos/logo.png" alt="Logo" title="Logo"> -->
+                                    <!-- <img src="assets/images/logos/logo.svg" alt="Logo" title="Logo"> -->
                                     <span class="h1 text-black"> {{ config('app.name') }} </span>
                                 </a>
                             </div>

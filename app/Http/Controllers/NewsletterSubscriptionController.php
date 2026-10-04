@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use App\Models\NewsletterSubscription;
-use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Facades\Notification;
-use App\Notifications\Newsletters\NewsletterSubscribedNotice;
 use App\Notifications\Newsletters\NewsletterAutoResponder;
-use App\Notifications\Newsletters\NewsletterUnSubscribeNotice;
+use App\Notifications\Newsletters\NewsletterSubscribedNotice;
 use App\Notifications\Newsletters\NewsletterUnsubscribedAutoResponder;
+use App\Notifications\Newsletters\NewsletterUnSubscribeNotice;
 use App\Notifications\Newsletters\NewsletterUnsubscribeRequestAutoResponder;
+use App\Rules\Turnstile;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Notification;
+use Illuminate\Support\Facades\Validator;
 
 class NewsletterSubscriptionController extends Controller
 {
@@ -41,9 +41,11 @@ class NewsletterSubscriptionController extends Controller
         $validator = Validator::make($request->all(), [
             'email' => 'required|email',
             'fullname' => 'required|string',
+            'cf-turnstile-response' => [app()->runningUnitTests() ? 'nullable' : 'required', new Turnstile],
         ]);
         if ($validator->fails()) {
             flash()->addError('Oops! Try again...');
+
             return redirect($previous_url)
                 ->withErrors($validator)
                 ->withInput($request->all());
@@ -68,7 +70,6 @@ class NewsletterSubscriptionController extends Controller
         // return back()->;
         return redirect($previous_url);
     }
-
 
     public function requestToUnsubscribe(Request $request, string $email)
     {
@@ -107,9 +108,7 @@ class NewsletterSubscriptionController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(NewsletterSubscription $newsletterSubscription)
-    {
-    }
+    public function show(NewsletterSubscription $newsletterSubscription) {}
 
     /**
      * Show the form for editing the specified resource.
@@ -126,5 +125,4 @@ class NewsletterSubscriptionController extends Controller
     {
         //
     }
-
 }

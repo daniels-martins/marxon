@@ -1,0 +1,30 @@
+{
+  "default_branch": "master",
+  "branches": [
+    "dev",
+    "feature/cloudflare-turnstile-captcha-implementation",
+    "feature/implement-resend",
+    "feature/software-cleanup",
+    "master",
+    "origin",
+    "staging"
+  ],
+  "parent": {
+    "dev": "master",
+    "feature/cloudflare-turnstile-captcha-implementation": "master",
+    "feature/implement-resend": "master",
+    "feature/software-cleanup": "master",
+    "master": null,
+    "origin": "master",
+    "staging": "master"
+  },
+  "order": [
+    "master",
+    "dev",
+    "feature/cloudflare-turnstile-captcha-implementation",
+    "feature/implement-resend",
+    "feature/software-cleanup",
+    "origin",
+    "staging"
+  ]
+}

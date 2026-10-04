@@ -13,7 +13,7 @@
                                 <i class="flaticon-call"></i>
                                 <div class="content">
                                     <h5>Phone</h5>
-                                    <a href="callto:+02347045063380"> +234 ) 704 - 5063 380</a><br>
+                                    <a href="callto:+2347062315823"> +234 706 231 5823</a><br>
                                     {{-- <a href="callto:+01245568695">+234 ) 704 - 5063 380</a><br> --}}
                                 </div>
                             </div>
@@ -80,6 +80,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12">
+                                    <x-turnstile action="contact" />
                                     <div class="form-group mb-10">
                                         <button class="theme-btn" type="submit">send message</button>
                                     </div>

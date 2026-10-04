@@ -16,7 +16,7 @@
                         <i class="flaticon-call"></i>
                         <div class="content">
                             <h5>Phone</h5>
-                            <h6><a href="callto:+012455689695">+234 ) 704 - 5063 380</a></h6>
+                            <h6><a href="callto:+2457062315823">+234 ) 706 - 2315 823</a></h6>
                         </div>
                     </div>
                 </div>

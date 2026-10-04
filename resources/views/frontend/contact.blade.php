@@ -14,7 +14,6 @@
                                 <div class="content">
                                     <h5>Phone</h5>
                                     <a href="callto:+2347062315823"> +234 706 231 5823</a><br>
-                                    {{-- <a href="callto:+01245568695">+234 ) 704 - 5063 380</a><br> --}}
                                 </div>
                             </div>
                             <div class="contact-info-item">

@@ -11,19 +11,19 @@ use Illuminate\Support\Facades\Route;
 if (!function_exists('presentRouteName')) {
 	function presentRouteName()
 	{
-		if (Str::contains(Route::currentRouteName(), ['.show', '.edit'], true)) {
+		$routeName = Route::currentRouteName();
 
+		if ($routeName && Str::contains($routeName, ['.show', '.edit'], true)) {
 			// convert the string to array (of two elements) for easy manipulation
-			$routeNameArray = explode('.', Route::currentRouteName(), 2);
+			$routeNameArray = explode('.', $routeName, 2);
 
 			// reorganize the string
 			$routeNameArray[1] = $routeNameArray[1] == 'show' ? 'Details' : 'Edit';
 
-			$arrangedRouteName = "$routeNameArray[0] $routeNameArray[1]";
-
-			return $arrangedRouteName;
+			return "$routeNameArray[0] $routeNameArray[1]";
 		}
-		return Route::currentRouteName();
+
+		return $routeName ?? '';
 	}
 }
 

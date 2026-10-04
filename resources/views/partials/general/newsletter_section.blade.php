@@ -12,6 +12,7 @@
                 <form action="{{ route('newsletter.subscribe') }}" method="POST">@csrf 
                     <input type="fullname" name="fullname" value="{{ old('fullname') }}" placeholder="Full name" required>
                     <input type="email" name="email" value="{{ old('email') }}" placeholder="Email Address" required>
+                    <x-turnstile action="newsletter" />
                     <button type="submit">Subscribe Now</button>
                 </form>
 

@@ -85,7 +85,7 @@ class BlogPostController extends Controller
         // minimal validation
         $validated = $request->validate([
             'img' => 'nullable',
-            'alt' => 'required_if:img,true',
+            'alt' => 'required_with:img',
             'tags' => 'nullable',
             'title' => 'required',
             'slug' => 'required',
@@ -107,8 +107,9 @@ class BlogPostController extends Controller
             $validated['img'] = $file_url->getPathName();
 
             // delete the old img
-            $fileDelete = file_exists($blogPost->img) ? unlink($blogPost->img) : null;
-            // dd($fileDelete);
+            if (file_exists($blogPost->img)) {
+                unlink($blogPost->img);
+            }
         }
 
         // dd($validated);

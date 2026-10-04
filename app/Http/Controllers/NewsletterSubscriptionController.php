@@ -75,9 +75,8 @@ class NewsletterSubscriptionController extends Controller
         $user = NewsletterSubscription::where('email', $email)->first();
 
         if ($user) {
-            // flash('Subscription Successful. Check your mail for further instructions');
             // notify client
-            Notification::route('mail', $request->email)
+            Notification::route('mail', $email)
                 ->notify(new NewsletterUnsubscribeRequestAutoResponder($user->toArray()));
 
             // notify admin
@@ -85,28 +84,24 @@ class NewsletterSubscriptionController extends Controller
                 ->notify(new NewsletterUnSubscribeNotice($user->toArray()));
         }
 
-        // return back()->
         return redirect(url()->previous());
     }
-
-
 
     public function destroy(Request $request, string $email)
     {
         $user = NewsletterSubscription::where('email', $email)->first();
 
-        $unsubscribe = $user->delete();
+        if ($user) {
+            $userArray = $user->toArray();
+            $unsubscribe = $user->delete();
 
-        $unsubscribe ?
-            // notify client
-            Notification::route('mail', $request->email)
-                ->notify(new NewsletterUnsubscribedAutoResponder($user->toArray()))
-            :    // notify admin
-            Notification::route('mail', config('app.dev_email'))
-                ->notify(new NewsletterSubscribedNotice($user->toArray()));
+            if ($unsubscribe) {
+                Notification::route('mail', $email)
+                    ->notify(new NewsletterUnsubscribedAutoResponder($userArray));
+            }
+        }
 
         return redirect(url()->previous());
-
     }
 
     /**

@@ -39,4 +39,4 @@ require 'frontend.php';
 require 'backend.php';
 
 // dev routes
-Route::get('/tinker',[TinkerController::class, 'index'])->name('pricing');
+Route::get('/tinker',[TinkerController::class, 'index'])->name('tinker');

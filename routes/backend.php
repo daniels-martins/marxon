@@ -37,7 +37,7 @@ Route::middleware("auth")->prefix('admin')->group(function () {
 Route::get('/', function () {
    $services = Service::all();
     return view('backend.index', compact('services'));
-})->name('dashboard');
+})->name('admin.dashboard');
 
 
 Route::get('blog/create', [BlogPostController::class, 'create'])->name('blog.create');
